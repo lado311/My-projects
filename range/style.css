@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    border: 2px solid red;
+    max-width: 300px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 250px;
+    background-color: darkblue;
+}
+
+.box input {
+    padding: 10px 0;
+    width: 200px;
+    cursor:e-resize;
+    
+}
+
+.box span{
+    color: greenyellow;
+    font-size: 50px;
+    font-weight: 600;
+}

@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.card {
+    width: 500px;
+    max-width: 100%;
+    margin: auto;
+    background-color: rgb(0, 46, 120);
+    padding: 30px 0 30px 0;
+    margin-top: 100px;
+}
+
+
+.write-box {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 50px;
+
+}
+
+
+.card input {
+    padding: 12px 10px;
+    width: 350px;
+    max-width: 100%;
+    outline: none;
+    border: 2px solid rgba(118, 0, 236, 0.267);
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: rgb(255, 252, 101);
+    font-family: 'Poppins', sans-serif;
+
+    
+}
+
+.card input::placeholder {
+    color: rgba(0, 0, 0, 0.51);
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.butn {
+    padding: 15px 12px;
+    border: 2px solid rgba(118, 0, 236, 0.267);
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    background-color: rgb(0, 142, 83);
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+.butn:hover{
+    background-color: rgb(4, 171, 101);
+    border: 2px solid rgb(4, 171, 101);
+
+}
+
+
+
+.tasks-box {
+    width: 90%;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+h1 {
+    margin-left: 30px;
+    color: rgb(238, 253, 195);
+    
+}
+
+.listcont {
+    width: 100%;
+    max-width: 100%;
+    border: 5px solid rgb(255, 0, 0);
+    border-radius: 5px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+ 
+}
+
+
+.list{
+      font-size: 20px;
+      color: white;
+      font-weight: 600px;
+}
+
+
+.listicons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.fa-trash-can {
+    font-size: 25px;
+    color: rgb(187, 1, 1);
+    cursor: pointer;
+}
+
+
+.fa-square-check {
+    font-size: 25px;
+    color: green;
+    cursor: pointer;
+    
+}
+
+
+
+.listcont.acept {
+    width: 100%;
+    max-width: 100%;
+    border: 5px solid rgb(123, 255, 0);
+    border-radius: 5px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+    transition: all 0.3s linear;
+}
+
+
+
+
+
+.delete-box {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+
+.deleteall {
+    padding: 10px 30px;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(199, 107, 8);
+    border: 2px solid rgb(153, 119, 51);
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+.deleteall:hover{
+    background-color: rgb(232, 123, 7);
+    border: 2px solid rgb(232, 123, 7);
+
+}
+
+
+
+input:invalid ~ .butn{
+    cursor: not-allowed;
+    opacity: 0.7;
+}
